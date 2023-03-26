@@ -1,8 +1,8 @@
-const UserModel = require("../models/USerSchema")
-const jwt = require('jsonwebtoken');
+const UserModel = require("../models/User")
+// const jwt = require('jsonwebtoken');
 // importing db model to store ther credentials of user;
 
-function LoginUser(req, res, next) {
+function LoginUser(req, res) {
     let email = req.body.email;
     let password = req.body.password;
 
@@ -20,10 +20,6 @@ function LoginUser(req, res, next) {
             res.json({token:accessToken,login :true})
         }
     })
-
-
-
-
 
 
 }

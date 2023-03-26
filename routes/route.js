@@ -8,7 +8,7 @@ const AuthRouter = express.Router();
 // importing controller ;
 const RegisterUser = require("../controller/RegisterUser")
 const LoginUser = require("../controller/LoginUser")
-const getUser = require("../controller/getUsers")
+const getUser = require("../controller/getUser")
 // const validator =require("../utils/Validator")
 const addproduct =  require("../controller/addproduct")
 const showproduct = require("../controller/showproduct")

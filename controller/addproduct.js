@@ -1,5 +1,7 @@
 const productmodel = require("../models/product")
 
+
+async function addproduct(req,res){
 const newProduct = new productmodel({
     name: req.body.name,
     quantity: req.body.quantity,
@@ -8,9 +10,6 @@ const newProduct = new productmodel({
     productimage:req.body.productimage
 })
 
-addproduct()
-
-async function addproduct()
 {
 let result = await newProduct.save()
 {
@@ -18,7 +17,7 @@ let result = await newProduct.save()
 }
 }
 
-
+}
 module.exports = addproduct;
 
 // async function addproduct(req, res,next) {
